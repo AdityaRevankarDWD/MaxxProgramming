@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 25px;
+            background-color: red;
+            color:black;
+            text-align: center;
+            display:none;
+        }
+
+        @media (max-width:150px){
+            #p1{
+                display:block;
+            }
+        }
+
+        @media (min-width: 151px) and (max-width: 300px){
+            #p2{
+                display:block;
+            }
+        }
+
+        @media (min-width: 301px) and (max-width: 500px){
+            #p3{
+                display:block;
+            }
+        }
+
+        @media (min-width:501px){
+            #p4{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="p1">Mobile</div>
+    <div class="box" id="p2">Tablet</div>
+    <div class="box" id="p3">laptop</div>
+    <div class="box" id="p4">Widescreen</div>
+    
+</body>
+</html>
